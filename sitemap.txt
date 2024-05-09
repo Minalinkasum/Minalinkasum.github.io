@@ -1,3 +1,4 @@
+http://example.com/tags/index.html
 http://example.com/2024/05/08/what-to-write/
 http://example.com/2024/05/08/first-view/
 http://example.com/
