@@ -1,6 +1,6 @@
 http://example.com/2024/05/09/5-4%E9%95%BF%E6%B2%99%E8%99%B9%E5%92%B2only%E5%B1%95%E4%BC%9Arepo/
+http://example.com/tags/index.html
 http://example.com/2024/05/05/%E8%B6%8A%E9%87%8E%E6%BB%91%E9%9B%AA/
 http://example.com/2024/05/09/%E8%87%AA%E9%A2%98/
-http://example.com/tags/index.html
 http://example.com/
 http://example.com/tags/%E6%96%87%E5%AD%A6/
