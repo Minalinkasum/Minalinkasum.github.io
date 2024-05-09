@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kasumiland</title>
+  
+  <subtitle>Wonderhoy!</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-05-09T09:07:11.414Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Minalinsky</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>越野滑雪</title>
+    <link href="http://example.com/2024/05/05/%E8%B6%8A%E9%87%8E%E6%BB%91%E9%9B%AA/"/>
+    <id>http://example.com/2024/05/05/%E8%B6%8A%E9%87%8E%E6%BB%91%E9%9B%AA/</id>
+    <published>2024-05-05T05:51:21.000Z</published>
+    <updated>2024-05-09T09:07:11.414Z</updated>
+    
+    
+    
+    
+    
+    <category term="文学" scheme="http://example.com/tags/%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+</feed>
