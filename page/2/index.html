@@ -2244,6 +2244,209 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/14/%E5%8F%A4%E8%AF%97%E8%AF%8D%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Minalinsky">
+      <meta itemprop="description" content="百啭无人能解，因风飞过蔷薇。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kasumiland">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/14/%E5%8F%A4%E8%AF%97%E8%AF%8D%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/" class="post-title-link" itemprop="url">古诗词自动生成</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-03-14 18:41:47" itemprop="dateCreated datePublished" datetime="2024-03-14T18:41:47+08:00">2024-03-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-05-14 18:48:05" itemprop="dateModified" datetime="2024-05-14T18:48:05+08:00">2024-05-14</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>文学理论课上讲过的诗词自动生成对现代文学的影响，是个有意思的主题。</p>
+<p>算法的大致思路大概是这样：</p>
+<p>1.随机生成若干个满足约束条件（格律，押韵等）的填词方案。</p>
+<p>2.选取其中较为优秀的一些结果作为父代，然后利用遗传算法中的交叉和变异操作，从父代生成子代，即，在已有的填词方案的基础上生成新的填词方案。</p>
+<p>3.不断进行评判与迭代，直到跳出循环，生成一首完整的作品。</p>
+<p>实现步骤大概是：</p>
+<p>准备数据：收集和准备古诗词的词汇和句型数据。</p>
+<p>随机生成填词方案：随机生成满足格律和押韵要求的初始诗词方案。</p>
+<p>评判优秀方案：定义一个评估函数来评判诗词的优劣。</p>
+<p>遗传算法操作：实现交叉和变异操作来生成新的诗词方案。</p>
+<p>关键词生成：根据输入的关键词生成相关的诗词。</p>
+<p>我使用GPT-4模型对相关算法进行了基于Python语言的程序生成。大概有几个注意的点：</p>
+<p>1.加载和保存诗句结构：我们添加了 load_structures 和 save_structures 方法，用于加载和保存诗句结构到 JSON 文件。</p>
+<p>2.添加新诗句结构：add_poem_structure 方法允许用户将新诗句结构添加到库中。</p>
+<p>3.示例用法：展示了如何添加一个新的诗句结构，并生成包含关键词的古诗词。</p>
+<p>import random<br>import json<br>import os</p>
+<p>class PoemGenerator:<br>    def <strong>init</strong>(self, keywords):<br>        self.keywords &#x3D; keywords<br>        self.words &#x3D; self.load_words()<br>        self.rhymes &#x3D; self.load_rhymes()<br>        self.structures &#x3D; self.load_structures()</p>
+<pre><code>def load_words(self):
+    # 加载词汇表 (示例词汇表)
+    return [&#39;春&#39;, &#39;江&#39;, &#39;花&#39;, &#39;月&#39;, &#39;夜&#39;, &#39;山&#39;, &#39;水&#39;, &#39;风&#39;, &#39;雨&#39;, &#39;心&#39;, &#39;梦&#39;, &#39;愁&#39;, &#39;酒&#39;, &#39;情&#39;, &#39;思&#39;]
+
+def load_rhymes(self):
+    # 加载押韵表 (示例押韵表)
+    return &#123;&#39;a&#39;: [&#39;花&#39;, &#39;家&#39;, &#39;沙&#39;, &#39;霞&#39;, &#39;茶&#39;],
+            &#39;i&#39;: [&#39;水&#39;, &#39;美&#39;, &#39;飞&#39;, &#39;泪&#39;, &#39;灰&#39;],
+            &#39;an&#39;: [&#39;山&#39;, &#39;安&#39;, &#39;寒&#39;, &#39;欢&#39;, &#39;滩&#39;],
+            &#39;en&#39;: [&#39;人&#39;, &#39;春&#39;, &#39;云&#39;, &#39;门&#39;, &#39;魂&#39;]&#125;
+
+def load_structures(self):
+    # 加载诗句结构 (如果存在用户自定义结构则加载)
+    if os.path.exists(&quot;structures.json&quot;):
+        with open(&quot;structures.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as file:
+            return json.load(file)
+    # 示例结构
+    return [
+        &quot;春江花月夜&quot;,
+        &quot;山水风雨情&quot;,
+        &quot;风花雪月夜&quot;,
+        &quot;青山绿水情&quot;,
+        &quot;心随流水去&quot;,
+        &quot;梦断花影间&quot;
+    ]
+
+def save_structures(self, structures):
+    # 保存诗句结构到文件
+    with open(&quot;structures.json&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as file:
+        json.dump(structures, file, ensure_ascii=False, indent=4)
+
+def add_poem_structure(self, structure):
+    # 添加新的诗句结构到库中
+    structures = self.load_structures()
+    if structure not in structures:
+        structures.append(structure)
+        self.save_structures(structures)
+        print(f&quot;成功添加新诗句结构: &#123;structure&#125;&quot;)
+    else:
+        print(f&quot;诗句结构已存在: &#123;structure&#125;&quot;)
+
+def generate_initial_population(self, size):
+    population = []
+    for _ in range(size):
+        poem = self.generate_random_poem()
+        population.append(poem)
+    return population
+
+def generate_random_poem(self):
+    structure = random.choice(self.structures)
+    poem = &quot;&quot;
+    for char in structure:
+        if char == &#39; &#39;:
+            poem += &#39; &#39;
+        else:
+            poem += random.choice(self.words)
+    return poem
+
+def evaluate(self, poem):
+    # 简单评估函数：根据关键词出现次数和押韵评分
+    score = 0
+    for keyword in self.keywords:
+        score += poem.count(keyword)
+    last_word = poem[-1]
+    for rhyme in self.rhymes.values():
+        if last_word in rhyme:
+            score += 1
+            break
+    return score
+
+def crossover(self, parent1, parent2):
+    # 简单交叉操作：交换中间部分
+    cut = len(parent1) // 2
+    child1 = parent1[:cut] + parent2[cut:]
+    child2 = parent2[:cut] + parent1[cut:]
+    return child1, child2
+
+def mutate(self, poem):
+    # 简单变异操作：随机替换一个词
+    index = random.randint(0, len(poem) - 1)
+    poem = list(poem)
+    poem[index] = random.choice(self.words)
+    return &#39;&#39;.join(poem)
+
+def generate_poem(self, generations=100, population_size=10):
+    population = self.generate_initial_population(population_size)
+    for _ in range(generations):
+        population = sorted(population, key=self.evaluate, reverse=True)
+        next_generation = population[:2]  # 保留最优秀的两个
+        while len(next_generation) &lt; population_size:
+            parent1, parent2 = random.sample(population[:5], 2)
+            child1, child2 = self.crossover(parent1, parent2)
+            if random.random() &lt; 0.1:  # 10% 变异率
+                child1 = self.mutate(child1)
+            if random.random() &lt; 0.1:
+                child2 = self.mutate(child2)
+            next_generation.extend([child1, child2])
+        population = next_generation
+    best_poem = max(population, key=self.evaluate)
+    return best_poem
+</code></pre>
+<h1 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h1><p>keywords &#x3D; [‘春’, ‘花’]<br>generator &#x3D; PoemGenerator(keywords)</p>
+<h1 id="添加新诗句结构"><a href="#添加新诗句结构" class="headerlink" title="添加新诗句结构"></a>添加新诗句结构</h1><p>new_structure &#x3D; “春风又绿江南岸”<br>generator.add_poem_structure(new_structure)</p>
+<h1 id="生成古诗词"><a href="#生成古诗词" class="headerlink" title="生成古诗词"></a>生成古诗词</h1><p>poem &#x3D; generator.generate_poem()<br>print(f”生成的古诗词: {poem}”)</p>
+<p>运行代码时，可以添加新的诗句结构，然后生成包含特定关键词的诗词。</p>
+<p>通过这种方式，可以不断扩展诗句库，生成更丰富多样的古诗词。</p>
+<p>问题是：此程序基本只能定义唯一的关键词，而不能实现任意关键词输入后，都能输出相应的诗词的结果。</p>
+<p>算法的优化还有待进一步探讨。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/08/%E4%BB%8E%E3%80%8A%E8%B7%AF%E5%BE%97%E8%AE%B0%E3%80%8B%E7%9C%8B%E3%80%8A%E6%97%A7%E7%BA%A6%E3%80%8B%E5%8F%99%E4%BA%8B%E8%89%BA%E6%9C%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -4618,7 +4821,7 @@ a[::-1]
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -4667,12 +4870,12 @@ a[::-1]
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">307k</span>
+    <span title="站点总字数">310k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">9:17</span>
+    <span title="站点阅读时长">9:24</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>

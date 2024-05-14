@@ -330,6 +330,31 @@
   </entry>
   
   <entry>
+    <title>古诗词自动生成</title>
+    <link href="http://example.com/2024/03/14/%E5%8F%A4%E8%AF%97%E8%AF%8D%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/"/>
+    <id>http://example.com/2024/03/14/%E5%8F%A4%E8%AF%97%E8%AF%8D%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/</id>
+    <published>2024-03-14T10:41:47.000Z</published>
+    <updated>2024-05-14T10:48:05.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>文学理论课上讲过的诗词自动生成对现代文学的影响，是个有意思的主题。</p><p>算法的大致思路大概是这样：</p><p>1.随机生成若干个满足约束条件（格律，押韵等）的填词方案。</p><p>2.选取其中较为优秀的一些结果作为父代，然后利用遗传算法中的交叉和变异操作，从父代生成子代，即，在已有的填词方案的基础上生成新的填词方案。</p><p>3.不断进行评判与迭代，直到跳出循环，生成一首完整的作品。</p><p>实现步骤大概是：</p><p>准备数据：收集和准备古诗词的词汇和句型数据。</p><p>随机生成填词方案：随机生成满足格律和押韵要求的初始诗词方案。</p><p>评判优秀方案：定义一个评估函数来评判诗词的优劣。</p><p>遗传算法操作：实现交叉和变异操作来生成新的诗词方案。</p><p>关键词生成：根据输入的关键词生成相关的诗词。</p><p>我使用GPT-4模型对相关算法进行了基于Python语言的程序生成。大概有几个注意的点：</p><p>1.加载和保存诗句结构：我们添加了 load_structures 和 save_structures 方法，用于加载和保存诗句结构到 JSON 文件。</p><p>2.添加新诗句结构：add_poem_structure 方法允许用户将新诗句结构添加到库中。</p><p>3.示例用法：展示了如何添加一个新的诗句结构，并生成包含关键词的古诗词。</p><p>import random<br>import json<br>import os</p><p>class PoemGenerator:<br>    def <strong>init</strong>(self, keywords):<br>        self.keywords &#x3D; keywords<br>        self.words &#x3D; self.load_words()<br>        self.rhymes &#x3D; self.load_rhymes()<br>        self.structures &#x3D; self.load_structures()</p><pre><code>def load_words(self):    # 加载词汇表 (示例词汇表)    return [&#39;春&#39;, &#39;江&#39;, &#39;花&#39;, &#39;月&#39;, &#39;夜&#39;, &#39;山&#39;, &#39;水&#39;, &#39;风&#39;, &#39;雨&#39;, &#39;心&#39;, &#39;梦&#39;, &#39;愁&#39;, &#39;酒&#39;, &#39;情&#39;, &#39;思&#39;]def load_rhymes(self):    # 加载押韵表 (示例押韵表)    return &#123;&#39;a&#39;: [&#39;花&#39;, &#39;家&#39;, &#39;沙&#39;, &#39;霞&#39;, &#39;茶&#39;],            &#39;i&#39;: [&#39;水&#39;, &#39;美&#39;, &#39;飞&#39;, &#39;泪&#39;, &#39;灰&#39;],            &#39;an&#39;: [&#39;山&#39;, &#39;安&#39;, &#39;寒&#39;, &#39;欢&#39;, &#39;滩&#39;],            &#39;en&#39;: [&#39;人&#39;, &#39;春&#39;, &#39;云&#39;, &#39;门&#39;, &#39;魂&#39;]&#125;def load_structures(self):    # 加载诗句结构 (如果存在用户自定义结构则加载)    if os.path.exists(&quot;structures.json&quot;):        with open(&quot;structures.json&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as file:            return json.load(file)    # 示例结构    return [        &quot;春江花月夜&quot;,        &quot;山水风雨情&quot;,        &quot;风花雪月夜&quot;,        &quot;青山绿水情&quot;,        &quot;心随流水去&quot;,        &quot;梦断花影间&quot;    ]def save_structures(self, structures):    # 保存诗句结构到文件    with open(&quot;structures.json&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as file:        json.dump(structures, file, ensure_ascii=False, indent=4)def add_poem_structure(self, structure):    # 添加新的诗句结构到库中    structures = self.load_structures()    if structure not in structures:        structures.append(structure)        self.save_structures(structures)        print(f&quot;成功添加新诗句结构: &#123;structure&#125;&quot;)    else:        print(f&quot;诗句结构已存在: &#123;structure&#125;&quot;)def generate_initial_population(self, size):    population = []    for _ in range(size):        poem = self.generate_random_poem()        population.append(poem)    return populationdef generate_random_poem(self):    structure = random.choice(self.structures)    poem = &quot;&quot;    for char in structure:        if char == &#39; &#39;:            poem += &#39; &#39;        else:            poem += random.choice(self.words)    return poemdef evaluate(self, poem):    # 简单评估函数：根据关键词出现次数和押韵评分    score = 0    for keyword in self.keywords:        score += poem.count(keyword)    last_word = poem[-1]    for rhyme in self.rhymes.values():        if last_word in rhyme:            score += 1            break    return scoredef crossover(self, parent1, parent2):    # 简单交叉操作：交换中间部分    cut = len(parent1) // 2    child1 = parent1[:cut] + parent2[cut:]    child2 = parent2[:cut] + parent1[cut:]    return child1, child2def mutate(self, poem):    # 简单变异操作：随机替换一个词    index = random.randint(0, len(poem) - 1)    poem = list(poem)    poem[index] = random.choice(self.words)    return &#39;&#39;.join(poem)def generate_poem(self, generations=100, population_size=10):    population = self.generate_initial_population(population_size)    for _ in range(generations):        population = sorted(population, key=self.evaluate, reverse=True)        next_generation = population[:2]  # 保留最优秀的两个        while len(next_generation) &lt; population_size:            parent1, parent2 = random.sample(population[:5], 2)            child1, child2 = self.crossover(parent1, parent2)            if random.random() &lt; 0.1:  # 10% 变异率                child1 = self.mutate(child1)            if random.random() &lt; 0.1:                child2 = self.mutate(child2)            next_generation.extend([child1, child2])        population = next_generation    best_poem = max(population, key=self.evaluate)    return best_poem</code></pre><h1 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h1><p>keywords &#x3D; [‘春’, ‘花’]<br>generator &#x3D; PoemGenerator(keywords)</p><h1 id="添加新诗句结构"><a href="#添加新诗句结构" class="headerlink" title="添加新诗句结构"></a>添加新诗句结构</h1><p>new_structure &#x3D; “春风又绿江南岸”<br>generator.add_poem_structure(new_structure)</p><h1 id="生成古诗词"><a href="#生成古诗词" class="headerlink" title="生成古诗词"></a>生成古诗词</h1><p>poem &#x3D; generator.generate_poem()<br>print(f”生成的古诗词: {poem}”)</p><p>运行代码时，可以添加新的诗句结构，然后生成包含特定关键词的诗词。</p><p>通过这种方式，可以不断扩展诗句库，生成更丰富多样的古诗词。</p><p>问题是：此程序基本只能定义唯一的关键词，而不能实现任意关键词输入后，都能输出相应的诗词的结果。</p><p>算法的优化还有待进一步探讨。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;文学理论课上讲过的诗词自动生成对现代文学的影响，是个有意思的主题。&lt;/p&gt;
+&lt;p&gt;算法的大致思路大概是这样：&lt;/p&gt;
+&lt;p&gt;1.随机生成若干个满足约束条件（格律，押韵等）的填词方案。&lt;/p&gt;
+&lt;p&gt;2.选取其中较为优秀的一些结果作为父代，然后利用遗传算法中的交叉和变异操作，</summary>
+      
+    
+    
+    
+    
+    <category term="理工" scheme="http://example.com/tags/%E7%90%86%E5%B7%A5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从《路得记》看《旧约》叙事艺术</title>
     <link href="http://example.com/2024/03/08/%E4%BB%8E%E3%80%8A%E8%B7%AF%E5%BE%97%E8%AE%B0%E3%80%8B%E7%9C%8B%E3%80%8A%E6%97%A7%E7%BA%A6%E3%80%8B%E5%8F%99%E4%BA%8B%E8%89%BA%E6%9C%AF/"/>
     <id>http://example.com/2024/03/08/%E4%BB%8E%E3%80%8A%E8%B7%AF%E5%BE%97%E8%AE%B0%E3%80%8B%E7%9C%8B%E3%80%8A%E6%97%A7%E7%BA%A6%E3%80%8B%E5%8F%99%E4%BA%8B%E8%89%BA%E6%9C%AF/</id>
