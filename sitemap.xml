@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2024/07/10/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2024-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2024/07/27/Mygo%E4%BA%8E%E6%88%91%E4%B9%8B%E5%BD%B1%E5%93%8D/</loc>
     
     <lastmod>2024-07-27</lastmod>
@@ -14,15 +23,6 @@
     <loc>http://example.com/2024/07/17/%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%D0%BE%D0%BB%D0%B5/</loc>
     
     <lastmod>2024-07-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2024/07/10/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2024-07-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -292,7 +292,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -300,28 +300,28 @@
   
   <url>
     <loc>http://example.com/tags/%E6%96%87%E5%AD%A6/</loc>
-    <lastmod>2024-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/%E5%90%8C%E4%BA%BA/</loc>
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E5%90%8C%E4%BA%BA/</loc>
+    <lastmod>2024-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E7%90%86%E5%B7%A5/</loc>
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
