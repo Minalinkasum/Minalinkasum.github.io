@@ -779,8 +779,7 @@
 
 
 
-<p>程序设计语言基本概念</p>
-<p>机器语言:以二进制代码的形式存在，不同cpu的机器语言不同。</p>
+<h2 id="程序设计语言基本概念"><a href="#程序设计语言基本概念" class="headerlink" title="程序设计语言基本概念"></a>程序设计语言基本概念</h2><p>机器语言:以二进制代码的形式存在，不同cpu的机器语言不同。</p>
 <p>汇编语言：用助记符表示机器指令，与cpu有关。</p>
 <p>高级语言:接近于英语，与cpu无关</p>
 <pre><code>    C/C++  语言
@@ -1019,6 +1018,12 @@
 <p>print(“三角角形的边长：”,a,b,c,end&#x3D;’ ‘)</p>
 <p>print(“三角角形的面积：”,area)</p>
 <p>画五角形</p>
+<blockquote>
+<blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <p>import turtle</p>
 <p>turtle.forward(200)</p>
 <p>turtle.right(144)</p>
@@ -2065,15 +2070,8 @@
 </blockquote>
 <p>  ‘     hello’</p>
 <p>华氏-摄氏温度转换表</p>
-<p>输入2个正整数lower和upper（lower&lt;upper&lt;100），请输出一张取值范</p>
-<p>围为[lower ，upper) 、且每次增加2华氏度的华氏-摄氏温度转换表，小数</p>
-<p>部分保留一位。温度转换的计算公式：C&#x3D;5×(F−32)&#x2F;9 ，其中：C表示摄</p>
-<p>氏温度，F表示华氏温度。</p>
-<p>lower,upper&#x3D;input().split() # 一行输入两个数，是字符串类型</p>
-<p>lower,upper&#x3D;int(lower),int(upper)        # 字符串变成整数</p>
-<p>for i in range(lower,upper,2):</p>
-<p>print(i,”{:5. 1f}”.format(5*(i-32)&#x2F;9))</p>
-<p>#print(“fahr&#x3D;{0:d} Celsius&#x3D;{ 1:5. 1f}”.format(i, 5*(i-32)&#x2F;9))</p>
+<p>输入2个正整数lower和upper（lower&lt;upper&lt;100），请输出一张取值范围为[lower ，upper) 、且每次增加2华氏度的华氏-摄氏温度转换表，小数<br>部分保留一位。温度转换的计算公式：C&#x3D;5×(F−32)&#x2F;9 ，其中：C表示摄氏温度，F表示华氏温度。</p>
+<p>lower,upper&#x3D;input().split()  # 一行输入两个数，是字符串类型<br>lower,upper&#x3D;int(lower),int(upper)        # 字符串变成整数<br>for i in range(lower,upper,2):<br>print(i,”{:5. 1f}”.format(5*(i-32)&#x2F;9))<br>#print(“fahr&#x3D;{0:d} Celsius&#x3D;{ 1:5. 1f}”.format(i, 5*(i-32)&#x2F;9))</p>
 <p>程序输入：</p>
 <p>30 40</p>
 <p>程序输出：</p>
@@ -2082,8 +2080,7 @@
 <p>34   1.1</p>
 <p>36   2.2</p>
 <p>38   3.3</p>
-<p>问题求解与算法</p>
-<p>Overview</p>
+<h1 id="问题求解与算法"><a href="#问题求解与算法" class="headerlink" title="问题求解与算法"></a>问题求解与算法</h1><p>Overview</p>
 <p>算法的概念<br>算法的三种结构<br>算法的发现<br>常用算法<br>算法的方法学</p>
 <p>4.1 问题求解过程</p>
 <p>算法的概念</p>
