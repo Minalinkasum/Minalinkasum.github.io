@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>版本学笔记 | Kasumiland</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Kasumiland" type="application/atom+xml">
+</head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/home"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>版本学笔记</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2025-02-23T13:17:56.000Z" id="date"> 2025-02-23</time></div></span><br><span>Last Update: <div class="control"><time datetime="2025-03-19T13:22:54.339Z" id="updated"> 2025-03-19</time></div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><p>版本学是一门非常日常、也非常有意思的学问。</p>
+<span id="more"></span>
+
+<h1 id="考试："><a href="#考试：" class="headerlink" title="考试："></a>考试：</h1><p>三道大题：判断，简答和综合题。<br>判断每题3分，共30。</p>
+<p>简答10分每题，共30:<br>1、蝴蝶装在书记装帧史上的意义   </p>
+<p>2、唐代刻书的特点  </p>
+<p>3、结合“紙(下面加个‘巾’字，打不出来)”谈纸的演化；</p>
+<p>综合20分每题，共40:</p>
+<p>1、给了几张图，要求著录古书，如果它是个宋本，结合所学知识判断它的刊刻地。</p>
+<p>2、怎么看待版本和善本。</p>
+<h1 id="期中作业范围"><a href="#期中作业范围" class="headerlink" title="期中作业范围"></a>期中作业范围</h1><p>以下九本书里，选择一本写读书报告<br>1、托马斯·坦瑟勒著,苏杰译：分析书志学纲要<br>2、苏杰编译：西方校勘学论著选<br>3、彼得·伯克：知识社会史<br>4、费希尔：阅读的历史<br>5、戴联斌：从书籍史到阅读史<br>6、安东尼·格拉夫敦：脚注趣史（——学术规范是从来就有的吗？如何看待长期身处于同一种文化语境之下的影响？）<br>7、王宇根：万卷：黄庭坚和北宋晚期诗学的阅读与写作（宋代的疑经风气缘何产生）<br>8、大木康：明末江南的出版文化<br>9、周绍明：书籍的社会史：中华帝国晚期的书籍与士人文化</p>
+<p>先让AI写一篇，自己再写一篇。AI的观点概括一下，主要谈谈自己的看法。AI那篇打印出来，自己写的手写出来。手写1000字即可。<br>读书报告侧重于：书籍史、物质文化方向、知识社会史方向。</p>
+<h1 id="作业：梳理版本源流"><a href="#作业：梳理版本源流" class="headerlink" title="作业：梳理版本源流"></a>作业：梳理版本源流</h1><p>1.源流图 2.异文表（需要论证你为什么这么画） 3.论“文”（结论+证据+过程）</p>
+<p>佛說緣本致經 1.<br><a href="%E6%88%96%E7%A7%B0%E4%B8%80%E5%88%87%E7%B6%93">大藏經</a>1454種5733卷 附字函釋音532卷 [北宋末]刊(福州東禪等覺院 開元禪寺) [南宋後期]修<br>6264帖	<br>└<br>佛說縁本致經1卷☑闕名譯 [宋]刊(福州開元禪寺)<br>第3032帖(686 687と同卷)</p>
+<p>闻如是：</p>
+<p>一时，佛在舍卫国祇树给孤独园。佛告诸比丘：「爱訒深有，荣色未起，为缠没住，亦有本栽，非无缘致。爱有耽荒，本致熟在，狂醉为受，不明观解，是名痴本。</p>
+<p>「痴缘所生，亦为有本。何等为本？眩曜色声，五盖驰惑，斯生痴本矣。</p>
+<p>「五盖蔽冥，致影沉吟，亦为有本。何等为本？三恶种牵，斯谓为本。</p>
+<p>「三恶栽习，亦为有本。何等为本？不摄根识，斯亦为本。</p>
+<p>「不摄根识，缘致有本。何等为本？谓非所应念，专候不已，斯谓本也。</p>
+<p>「非应所念，亦从本缘，不为无本。何等为本？不从正信，迷于所向，斯谓本也。</p>
+<p>「不信从谬，亦有缘致，非为无本。何等为本？恶师所引，非法听受，斯谓为本。</p>
+<p>「非正失听，亦有缘本。何等为本？违背贤圣英俊之聚，斯谓为本。</p>
+<p>「乖错贤俊缘致违背，亦为有本。何等为本？失于戴仰虚心集乐，斯谓本矣。如是，比丘！夫失贤众清高之聚，身口意行视听惑满，胸心闭塞矣。以非法见，信向毁矣。正道负背则邪见增，邪见增则内摄丧，内摄丧则三恶兴恣，三恶兴恣则五盖盈满，五盖盈满则痴本足，痴本足则爱受盛，以斯转种增着猗有，尘染无际矣。</p>
+<p>「度世明慧，昇于脱要，亦为有本。何谓度世智慧解脱之本？七觉法妙，谓为致本。</p>
+<p>「七觉镜照，亦为有本。何等为本？谓四意止，斯则觉本。</p>
+<p>「四意静止，由从有本，非无有本。其义焉在？谓清净洁妙，其行在三。</p>
+<p>「三清净行，亦为有本，非无有本。本义为何？谓守摄诸根，斯则为本。</p>
+<p>「守摄诸根，亦为有本，非无有本。本义为何？谓镜鉴玄照，斯为本念矣。</p>
+<p>「本念照往，亦为有本，缘致入正。何等为本？本念造胜，谓之树信。</p>
+<p>「信亦有本，不为无本。何等信本？谓多闻经道次第典要，斯谓为本。</p>
+<p>「闻于经法，亦为有本，不为无本。何等闻法？谓贤行澄清业真者也。</p>
+<p>「贤者清净，亦为有本。何等为本？谓俊行清真洁白之聚。</p>
+<p>「如是，比丘！贤者集胜依附明哲，奉事多闻能致信本，信本已立便得正念，正念已树守摄诸根，根守已建登三行净，已三清净便四意止，四意止立便七觉意；七觉意成立，是即无为解脱度世。」</p>
+<p>佛说如是，弟子受行。</p>
+<p>佛說緣本致經。</p>
+<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>目录版本校勘 文字音韵训诂</p>
+<p>版本学的核心理论构成：版本历史、版本源流、版本鉴定。</p>
+<h2 id="为什么讲版本学？"><a href="#为什么讲版本学？" class="headerlink" title="为什么讲版本学？"></a>为什么讲版本学？</h2><p>1.《春晓》同一句的“夜来风雨声”和“欲知昨夜风”（后不流传）——是否诉诸于思考——一首蒙学诗，不应该和小孩绕很多弯</p>
+<p>韦 草 形近而误</p>
+<p>贾岛做和尚时的法名叫 无本</p>
+<p>——我们所看到的文本都是经历过变化的，我们看到一处文本时，需要想想它有没有前世，它的经典化的过程是怎样的。</p>
+<p>2.身轻一鸟</p>
+<p>陈舍人从易当时文方盛之际，独以醇儒古学见称，其诗多类白乐天。盖自杨、刘唱和….谓“西昆体”。由是唐贤诸诗集几废而不行。陈公时偶得杜集旧本，文多脱误，至《送蔡都尉》诗云：“身轻一鸟”，其下脱一字。陈公因与数客各用一字补之。或云“疾”，或云“落”，或云“起”，或云“下”，莫能定。其后得一善本，乃是“身轻一鸟过”。陈公叹服，以为虽一字，诸君亦不能到也。——欧阳修《六一诗话》</p>
+<p>版本学的一个重要目的：寻找一个“善本”。</p>
+<p>3.庞严及第（弟）</p>
+<p>　唐京兆尹庞严，及第后，从（后从二字原倒置，据许本改）事寿春。有江淮举人姓严。是登（是登二字原空缺，据《因话录》补）科记误本，倒书庞严姓名，遂赁舟丐食就谒，时郡中止有（止有二字原空缺，据《因话录》补）一判官，亦更不问其氏，便诣门投刺，称从侄。庞之族人甚（甚字原空缺，据黄本补）少，览刺极喜，延纳勤勤，款曲同食。语及族人，都非庞氏之（之字原空缺，据黄本补）事，庞方讶之。因问：至竟郎君何姓？曰：某姓严。庞抚掌大笑（抚掌大笑四字原空缺，据黄本补）曰：君误矣！严自名严，预君何事？挥之令去，而犹自谓不误，（自谓不误四字原空缺，据黄本补）从容而退。——《太平广记》</p>
+<p>倒乙——版本学要力图避免讹误引发的问题</p>
+<p>4.姚祐出题</p>
+<p>三舍法行时，有教官出《易》义题云：“干为金，坤又为金，何也？”诸生乃怀监本《易》至帘前请云：“题有疑，请问。”教官作色曰：“经义岂当上请？”诸生曰：“若公试，固不敢。今乃私试，恐无害。”教官乃为讲解大概。诸生徐出监本，复请曰：“先生恐是看了麻沙本。若监本，则坤为釜也。”教授皇恐，乃谢曰：“某当罚。”即输罚，改题而止。然其后亦至通显。——陆游《老学庵笔记》<br>麻沙本：福建建阳县西麻沙镇书坊所刻的书。此地所刻之书，不够精工，印刷稍多，往往模糊不清，人称“麻沙本”。自宋末至明，麻沙本销及全国，远及朝鲜、日本。然讹误较多。其质量次于杭州及四川所刻本。后来“麻沙本”成为不好版本的代名词。</p>
+<p>5.金华戴元礼</p>
+<p>　金华戴元礼，国初名医。尝被召至南京，见一医家，迎求溢户，酬应不闲。元礼意必深于医者，注目焉。按方发剂，皆无他异。退而怪之，日往视焉。偶一人求药者，即去，追而告之曰：“临煎时下锡一块饧之去。元礼始大异之。念无以锡如煎剂，特扣之答曰：“是右方尔。”元礼求得其书，乃“饧”字耳。元礼急为正之。呜呼!不辨“饧”,”锡”（“饧 xing”指的是糖,”锡”）而医者，世胡可以弗谨哉！</p>
+<h2 id="学习版本学应该具备："><a href="#学习版本学应该具备：" class="headerlink" title="学习版本学应该具备："></a>学习版本学应该具备：</h2><p>（一）基础知识   写本 刻本 拓本（凡摹拓金石、碑碣、印章之本，皆称为“拓本”，即用纸紧覆在碑碣或金石等器物的文字或花纹上，用墨或其他颜色打出其文字、图形来的印刷品。）</p>
+<p>文献的载体与工具、书册制度、雕版印刷的发明和雕版品的种类、历代刻书的特点。</p>
+<p>（二）基本技能</p>
+<p>雕版书的版本著录、一本书版本源流的梳理、版本的识别与鉴定。</p>
+<p>祖本→……</p>
+<p>基本思想：  读书要读善本，读史需知史源。读书前要有版本意识。</p>
+<p>20世纪文献学四大学术发现：甲骨、简牍、敦煌、内阁档案。</p>
+<p>（三）参考书目</p>
+<p>1.《校雠广义.版本编》，程千帆，徐有富，齐鲁书社，1991.<br>2.《书林清话》，叶德辉，中华书局，1999.<br>3.《古籍版本学》，黄永年，江苏教育出版社，2005.<br>4.《古书版本常谈》，毛春翔，上海古籍出版社，2002.<br>5.《中国印刷史》，张秀民，浙江古籍出版社，2006.<br>6.《中国古籍版本学》，曹之，武汉大学出版社，2002.<br>7.《古书版本学概论》，李致忠，北京图书馆出版社，1990.<br>8.《书于竹帛》，钱存训，上海书店出版社，2004.<br>9.《敦煌写本文献学》，张涌泉<br>10.《简帛古书与中国思想》，李零</p>
+<p>读书要读大家写的小书，不要读小家写的大书。读书报告侧重于：书籍史、物质文化方向、知识社会史方向。</p>
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><p>1.刻本：亦称刊本、椠本、镌本，刻本是用雕版印刷的方法印装的书籍。</p>
+<p>2.版本：一种书籍经过多次传抄、刻印或以其他方式而形成的各种不同本子或指同一事物的不同表现形式或不同说法。或者：指印本（印刷的书本）。与写本相对。（思考：版本一定是雕版印刷吗？  黄永年：古籍版本学的研究对象是我国汉文古籍通行雕版印刷以来的版本。<br>李致忠：雕版印刷兴起之前，不好直接称为版本学。）</p>
+<p>3.写本：书写在纸张等载体上的文献，简称写本，又称抄本。在印刷术发明以前，文献的制作除了铸刻、雕刻在金石上以外，主要是依靠手工抄写。</p>
+<p>4.善本：最早是指校勘严密、刻印精美的古籍，后含义渐广，包括刻印较早、流传较少的各类古籍。实际上，真正的善本仍应主要着眼于书的内容，着眼于古籍的科学研究价值和历史文物价值。</p>
+<p>5.拓本：用纸紧覆在碑碣或金石等器物的文字或花纹上,用墨或其他颜色打出其文字、图形来的印刷品。</p>
+<h1 id="一、版本释名"><a href="#一、版本释名" class="headerlink" title="一、版本释名"></a>一、版本释名</h1><h2 id="（一）版、板"><a href="#（一）版、板" class="headerlink" title="（一）版、板"></a>（一）版、板</h2><p>《说文》卷七：版，片也，从片反声。（段玉裁注：凡施于宫室器用者皆曰版，今字作板。）</p>
+<p>片，判木也，从半木。段注：谓一分为二之木。（片）</p>
+<p>版和竹简，大概版更早。版和竹简并行之时，版的功能在于画图，竹简在于写字。</p>
+<p>带图的都是卷（后来的帛书），不带图的是篇。雕版印刷之后，版或者板的含义逐渐演变为经雕刻后供应印书用的版片。</p>
+<h2 id="（二）本"><a href="#（二）本" class="headerlink" title="（二）本"></a>（二）本</h2><p>思考：为什么书的量词是“一本书”？本的本义是树根。</p>
+<p>《说文》：木下曰本。从木，一在其下。……叶德辉：“乃知本者，因根而计数之词。”</p>
+<p>“本”作为书籍讲，始于刘向《别录》：“一人持本，一人读书，若怨家相对，曰雠。”</p>
+<p>“本钱”：能生钱的钱。校对后的“本”成为产生新本子的一个源。</p>
+<h2 id="（三）版本的初义：历史的方法、比较的方法"><a href="#（三）版本的初义：历史的方法、比较的方法" class="headerlink" title="（三）版本的初义：历史的方法、比较的方法"></a>（三）版本的初义：历史的方法、比较的方法</h2><p>1.版本一词，最早见于何时？</p>
+<p>王欣夫《文献学讲义》：今十余万，版本大备。</p>
+<p>《宋史》：咸平初，又有学究刘可名，言诸经版本多舛。</p>
+<p>《欧阳文忠公集》：访求板本焚毁，及止绝书铺……。（1055）</p>
+<p>2.初义：叶德辉：雕板谓之板，藏本谓之本。在宋代的时候指那块印板，后面演变成：用印版印刷出来的书。</p>
+<p>张舜徽：“版”源于简牍，“本”源于缣帛。后世合二者连称版本，用为书册通名。</p>
+<p>（1）印板：作为并列式合成词的“版本”</p>
+<p>（2）印版所印之本：作为偏正式合成词的“版本”。</p>
+<p>甲：与墨本、拓本相对。</p>
+<p>黄庭坚《山谷老人刀笔》：《温公神道碑》，市中有板本十千可置。</p>
+<p>墨本→碑→拓本→版本，或者墨本直接做成版本。</p>
+<p>例子：程大昌《雍录 岐阳石鼓文七》：岐阳石鼓文七，韩退之但得墨本而诗之，其曰张生手持石鼓文，劝我试作石鼓歌是也。及东坡苏氏则亲见石鼓矣，其诗曰冬十二月岁辛丑，我初从政在鲁叟。旧闻石鼓今见之，文字郁律龙蛇走。<br>强推偏旁推点画，时得一二遗八九是也。东坡初仕为凤翔府推官，石鼓在焉，故得而亲见之也。予之取古辞而叙辨石鼓也，非独不曾见石鼓，亦复不见墨本，独因郑樵模写其字之可晓者，而随用其见以为之辨。南剑州州学以郑本锓木，予既得版本，遂随事而为之辨。绍熙辛亥，有以墨本见示者，建康秦丞相家藏本也。</p>
+<p>石鼓（石，苏轼看到）→墨本（拓本，韩愈、郑樵看到）→双钩（模本，郑樵的产品）→版本（法中占，程大昌看到）</p>
+<p>乙：与抄本、稿本相对。</p>
+<p>在宋人眼中，版本就是板刻刻出来的书。</p>
+<p>毛春翔《古书版本常谈》：为了追求善本，版本学就应运而生。</p>
+<p>版本学的两个流派：1）.坚持“版本”原义，以刻本为对象。如：黄永年、李致忠；</p>
+<p>2）.发展“版本”意义，以“异本”为研究对象。如：毛春翔。</p>
+<p><strong>3.尝试给“版本”下个定义：版本是文本、载体（如：简，帛，纸张）和制作技术（如：写、刻）的特殊遇合，不同版本是祖本在特定时空的对应物。</strong></p>
+<p>例子：《周易》，竹简是载体，技术是写，结合：竹简本《周易》。<br>载体：纸张，技术：写；结合：纸质本《周易》。<br>载体：纸张；技术：印刷，结合：宋代印刷本《周易》。</p>
+<p>对图书馆和收藏人员来说，重要的是版本鉴定；对研究人员来说，重要的是版本源流。</p>
+<h2 id="（四）善本"><a href="#（四）善本" class="headerlink" title="（四）善本"></a>（四）善本</h2><p>“善本”“普本”，“善”与“普”是一个主观判断。在图书馆和收藏机构眼中，善本是乾隆以前的本子，普本则是乾隆以后的本子。（善本&#x3D;旧本）</p>
+<p>1.西汉人的善本：善书</p>
+<p>《汉书.景十三王传》言刘德：修学好古，实事求是。从民得善书，必为好写与之。</p>
+<p>钞：节钞；写：全写。</p>
+<p>2.宋人的善本<br>（1）穆修(979-1032)《唐柳先生文集后序》(1031,天圣九年)：<br>予少嗜观二家（韩、柳）之文，常病柳不全见于世，出人间者，残落才百余篇，韩则虽目其全，至所缺坠，亡字失句，独于集家为甚。志欲补得其正而传之，多从好事者访善本，前后累数十，得所长辄加注窜。<br>——以篇目全、文字全为善本</p>
+<p>（2）欧阳修《记旧本韩文后》:<br>予少家汉东，汉东僻陋无学者，吾家又贫无藏书。州南有大姓李氏者，其子尧辅颇好学。予为儿童时，多游其家，见有弊筐贮故书在壁间，发而视之，得唐《昌黎先生文集》六卷，脱落颠倒无次序，因乞李氏以归。……后七年，举进士及第，官于洛阳，而尹师鲁之徒皆在，遂相与作为古文。因出所藏《昌黎集》而补缀之，求人家所有旧本而校定之。……集本出于蜀，文字刻画，颇精于今世俗本，而脱缪尤多。凡三十年间，闻人有善本者，必求而改正之。（欧阳修《欧阳文忠公集》外集卷第二十三）</p>
+<p>——以没有谬误、刻书精良为善本</p>
+<p>（3）石中立(972—1049)宋祁《景文集》卷六十一(1049)</p>
+<p>（行状的信息比起神道碑较为准确，行状一般是自己写或者身边人写。<br>碑：立在地上，神道碑一般是名人所写；志：埋在地下。）<br>《石少师行状》:<br>公讳中立，字表臣，…..真宗咸平三年，以本官直集贤院。与虢略杨亿、中山刘筠、颍川陈越、成纪李宗谔相厚善。…善讐（qiu）书，不妄下朱墨，凡秘书更公手者，皆为善本。</p>
+<p>苏颂《苏魏公集》卷五十四《二乐陵郡公石公神道碑铭》:<br>而公尤勤铅摘，中外书无不请校，有疑舛，不轻涂抹，一经其手，四库以为善本。</p>
+<p>——经过校勘才能称为善本</p>
+<p>（4）晁公武《郡斋读书志》卷第五上“世说新语三卷”:<br>的改诊心都壹等<br>右宋临川王义庆撰，梁刘孝标注。..…余家旧本，盖得之王原叔家，后得晏元献公手自校本，尽去重复，其注亦小加剪截，最为善本云。</p>
+<p>——善本需要去掉重复</p>
+<p>（5）陈振孙《直斋书录解题》卷十六“唐太宗集三卷”:<br>唐太宗皇帝本集四十卷….而讹谬颇多。世所传太宗之文见于石刻者，如《帝京篇》、《秋日效庾信体诗》、《三藏圣教序》皆不在。……其他亦多有非太宗文者，杂厕其中，非善本也。</p>
+<p>——善本不可有别人的文章</p>
+<h3 id="完本"><a href="#完本" class="headerlink" title="完本"></a>完本</h3><p>司马光《温国文正公文集》卷第十一：苏才翁子美，有《赠扶沟白鹤观黄道士》诗，纪于屋壁，岁久漫灭。今县宰周同年得完本于民间，抵予求诗。</p>
+<p>晁公武《郡斋读书志》卷第四中“许浑丁卯集二卷”按浑自序：集三卷五百篇。世传本两卷三百余篇。……予近得浑集完本，五百篇皆在。</p>
+<p>宋人的善本观：全的、没有错误的、经过校勘的、没有重复的（从内容上着眼）</p>
+<p>3.明清：旧本&#x3D;善本<br>当时的风气流行收藏宋本、元本，以旧本为善本，尚古。</p>
+<p>黄丕烈“百宋一廛”，吴骞“千元十驾”，陆心源“皕宋楼”。</p>
+<blockquote>
+<p>那时浙馆藏旧刊本，为数不多，每天触手的，都是些明万历以后刻本。从外貌看去，纸墨既劣，刀法又笨拙异常；从内容看去，任意删略旧文。如会稽商潜编的《稗海》,脱文讹字，目不暇接。…这一大批书，论时代是明刻，距今三百多年，论内容，的确不足以称“善”;而我却不得不把它编入善本书目。这样的违心之事，做了好多年，直到现在，还未完全改过来。精神上实在不愉快。——毛春翔《古书版本常谈》</p>
+</blockquote>
+<blockquote>
+<p>丁丙《善本书室藏书志》:<br>择其可珍者，约有四端，特筑善本书室储藏之。一曰旧刻：宋元遗刊，日远日渺，幸传至今，固宜球图视之。二曰精本：朱氏一朝，万历后剞厥固属草草；然追溯嘉靖以前，刻书多翻宋架…三曰旧钞…四曰旧校。</p>
+</blockquote>
+<blockquote>
+<p>张之洞《轩语·语学》:<br>善本之义有三：一足本(无阙卷，未删削);二精本(一精校，一精注);三旧本(一旧刻，一旧钞)。</p>
+</blockquote>
+<blockquote>
+<p>余嘉锡《目录学发微》:<br>盖书籍由竹木而帛而纸；由简篇而卷，而册，而手抄，而刻版，而活字，其经过不知其若干岁，缮写不知其几何人。有出于通儒者，有出于俗士者。于是有断烂而部不完，有删削而篇不完，有节抄而文不完，有脱误而字不同，有增补而书不同，有校勘而本不同。</p>
+</blockquote>
+<blockquote>
+<p>黄永年《古籍版本学》:<br>·校勘性善本：一种是继承宋以来的本来涵义，凡校勘精审即接近古籍本来面目的都是善本、精本<br>·文物性善本：再一种则承认清以来藏书家、版本专家的讲法，凡已成为文物的古籍都可以说是善本、珍本。</p>
+</blockquote>
+<p><strong>所以，善本有三个性质：历史文物性、学术资料性、艺术代表性。</strong></p>
+<h1 id="二、如何梳理版本源流"><a href="#二、如何梳理版本源流" class="headerlink" title="二、如何梳理版本源流"></a>二、如何梳理版本源流</h1><p>重温版本的定义：版本是文本、载体（如：简，帛，纸张）和制作技术（如：写、刻）的特殊遇合，不同版本是祖本在特定时空的对应物。</p>
+<h2 id="1-祖本的确定和原貌的考察"><a href="#1-祖本的确定和原貌的考察" class="headerlink" title="1.祖本的确定和原貌的考察"></a>1.祖本的确定和原貌的考察</h2><p>（1）根据作者的传记资料<br>A.正史：如骆宾王《旧唐书》</p>
+<p>B.碑铭、行状：<br>·白居易《白氏长庆集》卷七十《唐故武昌军节度处置等使正议大夫检校户部尚书鄂州刺史兼御史大夫赐紫金鱼袋尚书右仆射河南元公墓志铭》:<br>公著文一百卷，题为《元氏长庆集》。又集古今刑政之书三百卷，号《类集》,并行于代公。</p>
+<p>《旧唐书》卷一百六十六：<br>著诗赋、诏册、铭课、论议等杂文一百卷,号曰《元氏长庆集》。又著古今刑政书三百卷，号《类集》,并行于代。</p>
+<p>韩琦《安阳集》卷五十《故观文殿学士太子少师致仕赠太子太师欧阳公墓志铭》:<br>尝被诏撰《唐书》纪十卷、志五十卷、表十五卷。又自撰《五代史》七十四卷、《易童子问》三卷、《诗本义》十四卷、《居士集》五十卷、《归荣集》一卷、《外制集》三卷内、《制集》八卷、《奏议》十一卷、《四六集》（四六：骈文）七卷、《集古録跋尾》十卷、《杂著》十九卷。</p>
+<p>由很多小集编成一个总集。</p>
+<p>（2）据目录的记载<br>赵安仁、杨亿所编《大中祥符法宝录》:<br>《景德传灯录》一部三十卷目录三卷<br>第一卷、第二卷：已上二卷述毗婆尸佛至释迦牟尼佛为七佛。圣师释迦牟尼将入涅槃，始以法眼付嘱摩诃迦叶，故迦叶为天竺第一祖。如是次第传法至第二十七祖般若多罗。又第三祖商那和修旁出末田底迦一人，第二十四祖师子尊者旁出达磨达等二十二人，合前是为五十祖师。第三卷、第四卷…..</p>
+<p>（3）根据序跋记载</p>
+<p>王禹俑《小畜集自序》:<br>咸平二年，守本官，知齐安郡，年四十有六。发白目昏，居常多病，大惧没世而名不称矣。因阅平生所为文，散失焚弃之外，类而第之，得三十卷。将名其集，以周易筮之，遇乾之小畜。乾之象曰：君子以自强不息。是禹俑修辞立诚，守道行己之义也。小畜之象曰：风行天上小畜，君子以懿文德。说者曰：未能行其施，故可懿文而已。是禹俘位不能行道，文可以饰身也。集曰小畜，不其然乎。咸平三年十二月晦日，太原王禹俑序。</p>
+<p>（4）其他</p>
+<h2 id="2-版本的钞写、刻印与流传"><a href="#2-版本的钞写、刻印与流传" class="headerlink" title="2.版本的钞写、刻印与流传"></a>2.版本的钞写、刻印与流传</h2><p>（1）书目所记的版本<br>许逸民、常振国，《中国历代书目丛刊》，1987</p>
+<p>（2）序跋所记的版本</p>
+<p>（3）现存版本的调查<br>A.全国通用目录：<br>《中国古籍善本目录》，上海古籍出版社，1985.</p>
+<p>B.各地馆藏目录<br>C.专业版本目录<br>(1)邵懿辰、邵章《四库简明目录标注》<br>(2)莫友芝《部亭知见传本书目》<br>(3)朱学勤《批本四库简明目录》<br>(4)傅增湘《藏园订补部亭知见传本书目》<br>(5)孙殿起《贩书偶记》<br>(6)张之洞《书目答问》<br>(7)杜泽逊《四库存目标注》</p>
+<p>D.影印古籍<br>(1)四库系列：续修四库全书、四库存目丛书、四库禁毁<br>(2)中华再造善本<br>(3)四部丛刊<br>(4)宋集珍本丛刊</p>
+<p>E.网站<br>全球汉籍影像开放集成系统<a target="_blank" rel="noopener" href="https://guji.wenxianxue.cn/index">https://guji.wenxianxue.cn/index</a><br>中文古籍联合目录及循证平台<a target="_blank" rel="noopener" href="https://gj.library.sh.cn/index">https://gj.library.sh.cn/index</a><br>中国国家图书馆古籍特藏<a target="_blank" rel="noopener" href="http://read.nlc.cn/thematDataSearch/toGujizt">http://read.nlc.cn/thematDataSearch/toGujizt</a><br>台北故宫博物院<a target="_blank" rel="noopener" href="https://rarebooks-maps.npm.edu.tw/index.php">https://rarebooks-maps.npm.edu.tw/index.php</a><br>佛教藏經目録數位资料庫<a target="_blank" rel="noopener" href="https://jinglu.cbeta.org/cgi-bin/jl_detail.pl?lang=&sid=zuvpvp">https://jinglu.cbeta.org/cgi-bin/jl_detail.pl?lang=&amp;sid=zuvpvp</a><br>哈佛大学善本特藏<br>英属哥伦比亚大学<br>普林斯顿大学<br>宫内寮書陵崇宁藏部<br><a target="_blank" rel="noopener" href="https://db2.sido.keio.ac.jp/kanseki/searchbib_result?search_type=1&kanseki_bunrui_bu=&kanseki_bunrui_rui=%E9%87%8B%E5%AE%B6">https://db2.sido.keio.ac.jp/kanseki/searchbib_result?search_type=1&amp;kanseki_bunrui_bu=&amp;kanseki_bunrui_rui=%E9%87%8B%E5%AE%B6</a></p>
+<p>·日本增上寺高丽藏、思溪藏、普宁藏数据库<a target="_blank" rel="noopener" href="http://jodoshuzensho.jp/zojoji_sandaizo/">http://jodoshuzensho.jp/zojoji_sandaizo/</a></p>
+<p>·国家图书馆赵城金藏数据库<br><a target="_blank" rel="noopener" href="http://read.nlc.cn/allSearch/searchList?searchType=10021&showType=1&pageNo=1">http://read.nlc.cn/allSearch/searchList?searchType=10021&amp;showType=1&amp;pageNo=1</a><br>山东大学图书馆明代大藏经数据库<br><a target="_blank" rel="noopener" href="http://58.59.15.37:9500/#/home">http://58.59.15.37:9500/#/home</a></p>
+<h2 id="3-版本间的比勘"><a href="#3-版本间的比勘" class="headerlink" title="3.版本间的比勘"></a>3.版本间的比勘</h2><p>（1）卷数</p>
+<p>（2）行格（对于刻本和写本）</p>
+<p>（3）序跋（元本里很多序跋，不少是从宋本里抄来的）</p>
+<p>（4）注文<br>《香山集》 例<br>•抄本《喜賦》：“俄北騎兮獸遁，致淮淝兮屍積。”<br>（卷一）<br>庫本“獸遁”作“宵遁”（清人认为自己也是北骑）<br>•《安撫開府史丞相誕辰》：“願將眉壽同長久，永作皇家柱石臣。”（卷三）<br>庫本改“皇家”爲“王家”。（清自称后金，不承认南宋“皇”）<br>•《上葉參政二絕》：“君臣相得同魚水，剩把𤏩名鎮四夷。”（卷十五）<br>庫本改“四夷”爲“四陲”。（夷）</p>
+<p>为什么四库本是差本（至少不算好本）？一是钞的时候，钞工偷工减料；二是不知道所选的四库底本（但是，四库底本所选的本子都是极好的，经部尤好。不过，底本好不等于呈现好）；三是抄录的过程里官方改了不少（御修于禁）。四库本里，涉及民族问题的，基本都有改动。</p>
+<p>四库全书考异</p>
+<p>（5）内文</p>
+<p>校勘学的校勘是追求一个正确的事物，而版本学着眼于发现差异。<br>《景德传灯录》三十三卷本和三十卷本</p>
+<p>景德传灯录为例<br>    金藏本	东禅寺本</p>
+<p>卷6:</p>
+<p>百丈</p>
+<p>怀海	<br>属大寂阐化南康，（百丈怀海）乃倾心依附。（他）与西堂智藏禅师同号入室，时二大士为角立焉。</p>
+<p>一夕，二士随侍马祖玩月次，祖曰：<br>“正恁么时如何?”西堂云：“正<br>好供养。”师云：“正好修行。”<br>祖云：“经入藏，禅归海。”（经是智藏禅师厉害，坐禅是百丈怀海厉害）	<br>属大寂阐化南康，乃倾心依附。与<br>西堂智藏、南泉普愿禅师同号入室，</p>
+<p>时三大士为角立焉。一夕，三士随侍马祖玩月次，祖曰：“正恁么时如何?”西堂云：“正好供养。”师云：“正好修行。”南泉拂袖便去。祖云：“经入藏，禅归海，唯有普愿独超物外。”</p>
+<p>是百丈怀海的传，东禅寺本应为后出。因为刊刻这一本子的人都是南泉普愿的弟子。</p>
+<p>《香山集》有如下数种版本：<br>A、清乾隆翰林院抄本，现藏国家图书馆，《宋集珍本丛刊》据以影印。<br>B、文渊阁四库全书本及影印本。<br>C、文津阁四库全书本及影印本。<br>D、文澜阁四库全书本，现藏浙江省图书馆，为原抄。<br>E、文溯阁四库全书本。<br>F、丁氏八千卷楼抄本，现藏南京图书馆，系丁氏自文澜阁抄出。<br>G、胡氏续金华丛书本，系胡宗楸据丁氏抄本刊刻。此本流传最为广泛，王德毅《丛书集成续编》所收，即为此本。另江苏广陵古籍刻印社1983所影，亦为此本。</p>
+<h2 id="4-确定版本之间的关系、画出版本源流图"><a href="#4-确定版本之间的关系、画出版本源流图" class="headerlink" title="4.确定版本之间的关系、画出版本源流图"></a>4.确定版本之间的关系、画出版本源流图</h2><pre><code>                永乐大典
+</code></pre>
+<p>乾隆翰林院抄本      文渊阁本  文津阁本  文澜阁本   文溯阁本</p>
+<pre><code>                                 丁氏抄本
+
+
+
+                               续金华丛书本
+</code></pre>
+<p>所以，底本和校本不可选同一条源流上的。</p>
+<h1 id="三、写本的工具与载体"><a href="#三、写本的工具与载体" class="headerlink" title="三、写本的工具与载体"></a>三、写本的工具与载体</h1><p>竹、帛、纸</p>
+<h2 id="1-写本的工具：笔、墨、刀"><a href="#1-写本的工具：笔、墨、刀" class="headerlink" title="1.写本的工具：笔、墨、刀"></a>1.写本的工具：笔、墨、刀</h2><p>毛笔的发明者？《庄子》宋元君召诸史画图：“众史皆至，受揖而立，舐笔和墨。”</p>
+<p>战国早期信阳长台关楚墓笔、左家公山楚墓笔</p>
+<p>50年代基本建设；70年代深挖洞广积粮，导致出土的墓葬特别多。</p>
+<p>起码从战国早期开始，这三件事物都成熟了。甲骨、金石、竹木不是三个不同的阶段，而是共同发展的，只是使用场合不同。</p>
+<h2 id="2-简牍的发现与形制"><a href="#2-简牍的发现与形制" class="headerlink" title="2.简牍的发现与形制"></a>2.简牍的发现与形制</h2><p>（1）考古发现与简牍：<br>《汉书·艺文志》:<br>武帝末，鲁共王坏孔子宅，欲以广其宫，而得古文《尚书》及《礼记》、《论语》、《孝经》凡数十篇，皆古字也。共王往入其宅，闻鼓琴瑟钟磬之音，于是惧，乃止不坏。</p>
+<p>●楚简：战国中期至白起灭楚的楚简(约前390——前278)<br>长台关楚简、九店楚简、石板村楚简、郭店楚简、上博楚简。</p>
+<p>●秦简：白起灭楚至秦亡的秦简(前278-前206)<br>放马滩秦简(约239年前后)、睡虎地秦简(前217年前后)、周家台秦简(前209年前后。)<br>里耶秦简</p>
+<p>●初期汉简：西汉初至汉武帝时的汉简(前206——前87):<br>马王堆汉简(秦汉之际至汉文帝十二年以前，约前221——前168)<br>张家山汉简(文帝初，约前187——前179)<br>双古堆汉简(汉文帝十五年左右，约前165)、<br>虎溪山汉简(约前187——前162)、<br>孔家坡汉简(西汉文、景时，约前173——前142)<br>银雀山汉简(汉文、景至武帝初期，约前179——前134，银雀山汉简的意义是让我们区分了孙子与孙膑)</p>
+<p>●西汉简：汉武帝以后至西汉末的汉简(前87——前24)<br>八角廊汉简(汉宣帝五凤二年前，约前56年前)<br>磨咀子汉简(汉成帝河平年间，约前28——前25年)<br>尹湾汉简(汉成帝永始、元延年间，约前16——前9年)<br>旱滩坡汉简(西汉末或东汉初)。敦煌简、居延简。<br>●东汉魏晋简，楼兰简和尼雅简。</p>
+<p>出土地方：湖南湖北、西北<br>地点：墓葬、烽燧、邮驿<br>年代：楚简多典籍；秦简多法律与日书，汉简典籍账历都有。</p>
+<p>（2）竹简的制作、形制、使用</p>
+<p>王充《论衡·知量》:<br>夫竹生于山，木生于林，未知所入。截竹为筒，破以为牒，加笔墨之迹，乃成文字，大者为经，小者为传记。断木为颡，析之为板，力加刮削，乃成奏牍。</p>
+<p>A.竹木的整治：<br>《太平御览》卷六十引《楚国先贤传》:孙敬编杨柳简以为经本，晨夜诵习。<br>a取材<br>b杀青：<br>刘向《别录》:杀青者，直治竹作简书之耳。新竹有汁，善朽蠹，凡作简者皆于火上炙干之。<br>c涂染：陈梦家整理武威汉简：出土木简表面有光亮，似涂胶质者。<br>d削衣：表皮文字刮去之后，旧简仍可再用，名为削衣。</p>
+<p>B.简形与简长：<br>简行有三种，平头、梯形、圆形。</p>
+<p>简长以六为基数：<br>郑玄：六经书于二尺四寸之简，《孝经)一尺二寸，《论语》八寸。<br>王充：大者为经，小者为传记。<br>二尺四寸，圣人之语。<br>武威发现的《仪礼》简长54厘米，约合汉制二尺四寸。</p>
+<p>C.书写：《说文解字》:，竹肤也。笨，竹里也。</p>
+<p>D.编联</p>
+<p>编绳：丝绳、麻绳。韦编三绝&#x3D;纬编三绝；编联方式：二道、三道、多道编<br>三道编以上就有天头、地脚的概念<br>E.收卷：赘简、尾题、首题（多数写在简背，因为把简卷起以后自右至左就是先题目后篇目）</p>
+<p>F.符号：篇号、章号、重文号</p>
+<p>（3）木牍的形制与使用</p>
+<p>A.取材<br>B.用途：杜预《春秋左传序》：大事书之于册，小事简牍而已。</p>
+<p>牍以五为基数：<br>三尺为暂，用以书法令；二尺为檄，用于征召申讨；一尺五寸为传信，介绍信；一尺为常见的信；五寸为门关之信、通行证。</p>
+<p>特殊的牍：觚</p>
+<h2 id="3-帛书的发现与形制"><a href="#3-帛书的发现与形制" class="headerlink" title="3.帛书的发现与形制"></a>3.帛书的发现与形制</h2><p>A.李士训《记异》曰：大历初，带经瓜于灞水之上，得石函，中有绢素《古文孝经》一部二十二章，壹阡捌伯黍十二言。初传与李太白，白授当涂令李阳冰，阳冰尽通其法，上皇太子焉。(《六艺之一录》卷一百七十九)</p>
+<p>帛书发现很少，实物也不多。</p>
+<p>长沙子弹库楚帛书、长沙马王堆帛书</p>
+<p>B.帛书的用途：用作定本、用作竹书的附图</p>
+<p>#罄竹难书、率尔操觚（觚可以随便写写）、连篇累牍</p>
+<h2 id="4-纸书与册叶制度：纸的发明与纸书装帧（重要）"><a href="#4-纸书与册叶制度：纸的发明与纸书装帧（重要）" class="headerlink" title="4.纸书与册叶制度：纸的发明与纸书装帧（重要）"></a>4.纸书与册叶制度：纸的发明与纸书装帧（重要）</h2><p>简牍时代看书非常不容易，即使是皇帝也一样。</p>
+<p>●《史记·秦始皇本纪》:<br>天下之事，无大小皆决于上。上至以衡石量书，日夜有呈，不中呈不得休息。</p>
+<p>●《史记·滑稽列传》:<br>朔初入长安，至公车上书，凡用三千奏牍。公车令两人共持举其书，仅然能胜之。人主从上方读之，止 乙其处，读之二月乃尽。</p>
+<p>从卷到册的变化：阅读方式的变化。卷是线性的，检索很难；册让检索更容易。</p>
+<h3 id="A-纸的发明与古纸的发现"><a href="#A-纸的发明与古纸的发现" class="headerlink" title="A.纸的发明与古纸的发现"></a>A.纸的发明与古纸的发现</h3><p>《东观汉记》卷二十：<br>蔡伦，字敬仲，桂阳人。为中常侍，有才学，尽忠重慎。每至休沐，辄闭门绝宾客，曝体田野。典作尚方，造意用树皮及敝布、鱼网作纸。元兴元年(105)奏上之，帝善其能，自是莫不用，天下咸称蔡侯纸。</p>
+<p>《后汉书》卷一百八：<br>蔡伦，字敬仲，桂阳人也。……有才学，尽心敦慎，数犯严颜，匡弼得失。每至休沐，辄闭门绝宾，曝体田野。后加位尚方令，永元九年监作秘剑及诸器械，莫不精工坚密，为后世法。自古书契，多编以竹简，其用缣帛者谓之为纸。缣贵而简重，并不便于人。伦乃造意，用树肤、麻头及敝布、鱼网以为纸。元兴元年奏上之，帝善其能，自是莫不从用焉，故天下咸称蔡侯纸。</p>
+<p>王隐《晋书》曰：<br>魏太和六年，博士河间张揖上《古今字诂》,其巾部云：纸，今帋，其字从巾。古之素白，依书长短，随事截绢，枚数重沓，即名幡纸，字从系，此形声也。后和帝元兴中，中常侍蔡伦以故布捣到作纸，故字从巾，是其声虽同，系巾为殊，不得言古之纸为今纸。</p>
+<p>《释名》曰：<br>纸，砥也，平滑如砥石也。</p>
+<p>纸从系，帋从巾。（帛书也叫“纸”，但是是古纸。概念不重要，概念所指的事物才重要。蔡伦纸以树皮、麻头、破布、鱼网为原料，故从巾。）</p>
+<p>辨别古纸（帛书）与今纸（帋）：<br>《三辅故事》汉太始四年(前93)<br>卫太子大鼻，武帝病，太子入省，江充曰：上恶大鼻，当持纸（绢帛）蔽其鼻而入。</p>
+<p>马总《意林》<br>光武车驾徙都洛阳(25),载素、简、纸（今纸）经凡二千两。</p>
+<p>《艺文类聚》卷三十一：<br>崔瑗(77-142)复葛元甫书说：今遣送《许子》书十卷，贫不及素，但以纸（帋）耳。</p>
+<h3 id="B-古纸的发现"><a href="#B-古纸的发现" class="headerlink" title="B.古纸的发现"></a>B.古纸的发现</h3><p>a、罗布淖尔纸。1933年夏天，考古学家黄文弼在新疆罗布淖尔古烽燧亭遗址中发现一种古纸，长约4厘米，宽约10厘米，白色、麻质、纸面较粗糙。同时出土的还有黄龙元年(公元前49年)书写的木简。</p>
+<p>b、灞桥纸 c、居延纸 d、悬泉纸 e、放马滩纸</p>
+<p>造纸受到漂絮的启发</p>
+<h3 id="C-纸的抄造与品类"><a href="#C-纸的抄造与品类" class="headerlink" title="C.纸的抄造与品类"></a>C.纸的抄造与品类</h3><p>（1）纸的抄造</p>
+<p>明宋应星《天工开物》  “杀青”<br>1、斩竹漂塘<br>2、煮煌足火<br>3、荡料入帘<br>4、覆帘压纸<br>5、透火焙干</p>
+<p>（2）纸的品类</p>
+<p>1、麻纸：以黄麻、布头、破履为主原料生产的强韧纸张。麻纸有多种，主要分白、黄两种。白麻纸洁白光滑，背面较正面粗糙且有草棍等粘附，质地细薄，坚韧。纸纹均宽，约一指半。黄麻纸色略黄，稍粗糙，有的较白麻纸略厚。主要流行的年代是汉至唐。<br>2、皮纸、藤纸：以树木韧皮纤维为原料抄造，一般来说皮纸包括构皮纸、桑皮纸、楮皮纸、檀皮纸。始于南北朝时代。<br>3、竹纸：以竹子为原材料造的纸。主要原料为毛竹，此外还有苦竹、绿竹、慈竹、黄竹。竹纸种类繁多，常见的有毛边纸、毛太纸、元书纸、玉扣纸、连史纸。始于唐，盛于宋，米芾、苏轼。不耐储藏，容易发臭发黄。明代之后得到改良。但是总体来说，不如前两种好保存。</p>
+<p>帘纹判断纸的年代</p>
+<p>竹丝纹：<br>早期在4-6丝&#x2F;厘米，唐宋约为6-10丝&#x2F;厘米<br>明清时增至10-15丝&#x2F;厘米清代有些纸高达18丝&#x2F;厘米。</p>
+<p>帘线纹：<br>4~5厘米是很正常的，<br>宋代3厘米多，“二指”宽的帘纹。明清2厘米多</p>
+<h3 id="D-纸书的装帧：最重要的变化是从卷到册"><a href="#D-纸书的装帧：最重要的变化是从卷到册" class="headerlink" title="D.纸书的装帧：最重要的变化是从卷到册"></a>D.纸书的装帧：最重要的变化是从卷到册</h3><p>(1)卷轴装</p>
+<p>卷轴的组成：卷——一般长40-50cm，宽25-27cm</p>
+<p>轴</p>
+<p>褾</p>
+<p>带</p>
+<p>签：标志物 “一一悬牙签”</p>
+<p>帙</p>
+<p>从卷到册的变化受到佛教梵夹装的影响：</p>
+<p>(2)梵夹装</p>
+<p>唐段成式《酉阳杂俎》卷十八：<br>贝多出摩伽陀国，长六七丈，经冬不凋。此树有三种：一者多罗娑力叉贝多，二者多梨婆力叉贝多，三者部婆力叉多罗梨，并书其叶，部閣一色，取其皮书之。贝多是梵语，汉翻为叶，贝多婆力叉者，汉言叶树也。西域经书，用此三种皮叶，若能保护，亦得五六百年。</p>
+<p>南宋刘义庆《大业杂记》:<br>洛水有翊津桥，通翻经道场。新翻经本从外国来，用贝多树叶，形似枇杷叶而厚大，横作行书，约经多少，缀其一边牒然，今呼为梵夹。</p>
+<p>《资治通鉴》卷二百五十：<br>上(唐懿宗)奉佛太过，怠于政事。尝于咸泰殿筑坛为内寺尼受戒，两街僧尼皆入预。又于禁中设讲席自唱经，手录梵夹。<br>元胡三省注：梵夹者，贝叶经也，以板夹之，谓之梵夹。</p>
+<p>贝多叶翻检起来比卷方便</p>
+<p>(3)经折装（这个名字出现很晚，几乎要到元明时期。..旋风装）</p>
+<p>将长卷反复折叠成为折子，又称“折子装”<br>(4)龙鳞装</p>
+<p>是以一张比书叶略宽的长条纸作底，首叶单面书写，全幅裱于底纸右端，其余书叶均双面书写，以每叶右边无字空条处，逐叶向左鳞次相错地粘裱在首叶末尾的底纸上。看去错落相积，好似龙鳞。珍藏时从首向尾卷起，外表仍是卷轴的形式，打开翻阅时，除首叶全裱于底纸上，不能翻动外，其余均能跟阅览现代书籍一样，逐叶翻转。</p>
+<p>拆了再装、装了再拆。单页版式：记住</p>
+<p>1:边框&#x2F;边栏 2：栏线 3：书口&#x2F;象鼻（垂下来的那根线）（挖掉叫白口，不挖掉和鱼尾合一起叫黑口，挖一点留条线是小黑口或者线口） 4：鱼尾 5：天头 6：地脚</p>
+<p>看书口、看边栏<br>边栏经历了：上下单边（基本上卷轴装或者经折装）——四周单边——左右双边——四周双边——特殊边栏（竹节栏、卍字栏等）的发展历程</p>
+<p>单鱼尾【 双鱼尾（顺鱼尾【】 对鱼尾【【）三鱼尾 超过3个的基本没有。</p>
+<p>行格：栏线分开的版面。一般说半页多少多少行、行多少字。</p>
+<p>半页十行 一行20字 到清代基本成为定式。行格越少字越大</p>
+<p>著录：版宽高度、行格、鱼尾（字数、刊工）、避讳字、藏书印、题跋</p>
+<p>作业：按此顺序描述一下。</p>
+<p>（5）蝴蝶装</p>
+<p>印本书籍的早期装帧形式，版心向内，单口朝外。</p>
+<p>优点：虫鼠不能侵</p>
+<p>（6）缝簣装</p>
+<p>（7）包背装<br>印页对折，版心向外，用纸捻在书脑部装订成册，以书皮包裹书背。（元明时多用）</p>
+<p>线装：明代中叶以后最常见的装帧形式。<br>书背外露，钉眼穿线，装订成册。 折叠方式是次一级的革命性变化；书套：四合套（上下左右）、六合套（上下左右全包）</p>
+<h1 id="四、写印之间：石刻与拓本"><a href="#四、写印之间：石刻与拓本" class="headerlink" title="四、写印之间：石刻与拓本"></a>四、写印之间：石刻与拓本</h1><p>在写本和印本之间，还有拓本的阶段。</p>
+<p>捺印（印动纸不动，向下） →拓本→印刷术</p>
+<p>玺印 →石刻（纸动碑不动，对面）→印本（纸动版不动，向上）</p>
+<h2 id="（1）摩崖"><a href="#（1）摩崖" class="headerlink" title="（1）摩崖"></a>（1）摩崖</h2><p>刻在天然的石头或者稍微经过整治的石头上。<br>如：褒斜道摩崖、桂林摩崖（元祐党籍碑 ，宋代摩崖石刻，现存二块，均在广西。一在今广西桂林市东七星山瑶光峰下的龙隐岩。北宋徽宗时蔡京专权，把元祐、元符间司马光、文彦博、苏辙、苏轼、黄庭坚、秦观等三百零九人列为奸党，将姓名刻石颁布天下，后徽宗下诏毁其碑。现存桂林七星岩碑刻为南宋庆元四年（1198）梁律据家藏旧本重刻。碑距地丈余，额有隶书“元祐党籍”四字。久经风雨侵蚀，部分文字已模糊，但尚可辨认。另一块在广西融水苗族自治县真仙岩，宋嘉定四年（1211）沈暐重刻，该碑据学者考证于明代被毁后又进行了重刻）、山东河北的佛教摩崖。</p>
+<h2 id="（2）碑碣"><a href="#（2）碑碣" class="headerlink" title="（2）碑碣"></a>（2）碑碣</h2><p>1.考源：“碑，竖石也”</p>
+<p>先秦礼书所记之碑，盖有三种：<br>为宫中之碑，其用在于测日影；为庙中之碑，其用在于系牺牲；为坟墓之碑，其用在于下棺木。</p>
+<p>宫、庙有别，宫住人，庙住神</p>
+<p>2.碑的形制<br>碑穿：拉绳子下棺木<br>碑趺可以加大受力面积，防止碑的沉降。</p>
+<h2 id="（3）墓记墓志"><a href="#（3）墓记墓志" class="headerlink" title="（3）墓记墓志"></a>（3）墓记墓志</h2><p>1.墓志和墓碑的区别：<br>墓碑树于坟墓之前，高显易见；墓志埋于坟墓之内，幽密难睹。<br>墓碑类用形体高大之竖石，而墓志则多用形体较小之方石。<br>从内容来讲，碑多用于表德，而志多用于记事。</p>
+<p>墓志有很多异名，如墓碣、圹志、圹铭、坟记、玄堂铭、阴堂铭。</p>
+<p>2.墓志的形制：志盖、志文</p>
+<p>两石相对，上面有盖，拿掉才能看到志文</p>
+<p>3.墓志的来源（禁碑）</p>
+<p>《宋书·礼志》:汉以后，天下送死奢靡，多作石室、石兽、碑铭等物。东汉建安十年，魏武帝以天下凋敝，下令不得厚葬。又禁立碑。<br>墓志之兴，较墓碑为晚，现存最早的墓志为东汉延平元年(106)《贾武仲妻马姜墓志》。而最初之墓志多记事甚简，有志无铭，故也常称为“墓记”。</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2025/03/19/20%E4%B8%96%E7%BA%AA%E5%A4%96%E5%9B%BD%E4%BD%9C%E5%AE%B6%E7%A0%94%E7%A9%B6/">← Next 20世纪外国作家研究</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2025/02/19/%E8%A5%BF%E6%96%B9%E6%96%87%E8%AE%BA%E7%AC%94%E8%AE%B0/">西方文论笔记 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://i.bobopic.com/small/111760955.jpg" alt="Logo"></a><h1 id="Dr"><a href="/">Minalinsky</a></h1><div id="description"><p>百啭无人能解，因风飞过蔷薇。</p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/Minalinkasum"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" href="mailto:1044558179@qq.com"><i class="fa fa-envelope" alt="E-Mail"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%80%83%E8%AF%95%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">考试：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%9F%E4%B8%AD%E4%BD%9C%E4%B8%9A%E8%8C%83%E5%9B%B4"><span class="toc-number">2.</span> <span class="toc-text">期中作业范围</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%9C%E4%B8%9A%EF%BC%9A%E6%A2%B3%E7%90%86%E7%89%88%E6%9C%AC%E6%BA%90%E6%B5%81"><span class="toc-number">3.</span> <span class="toc-text">作业：梳理版本源流</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">4.</span> <span class="toc-text">引言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%B2%E7%89%88%E6%9C%AC%E5%AD%A6%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">为什么讲版本学？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%89%88%E6%9C%AC%E5%AD%A6%E5%BA%94%E8%AF%A5%E5%85%B7%E5%A4%87%EF%BC%9A"><span class="toc-number">4.2.</span> <span class="toc-text">学习版本学应该具备：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">4.3.</span> <span class="toc-text">核心概念</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%89%88%E6%9C%AC%E9%87%8A%E5%90%8D"><span class="toc-number">5.</span> <span class="toc-text">一、版本释名</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%89%88%E3%80%81%E6%9D%BF"><span class="toc-number">5.1.</span> <span class="toc-text">（一）版、板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E6%9C%AC"><span class="toc-number">5.2.</span> <span class="toc-text">（二）本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%89%88%E6%9C%AC%E7%9A%84%E5%88%9D%E4%B9%89%EF%BC%9A%E5%8E%86%E5%8F%B2%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%81%E6%AF%94%E8%BE%83%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">5.3.</span> <span class="toc-text">（三）版本的初义：历史的方法、比较的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%96%84%E6%9C%AC"><span class="toc-number">5.4.</span> <span class="toc-text">（四）善本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%9C%AC"><span class="toc-number">5.4.1.</span> <span class="toc-text">完本</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%A6%82%E4%BD%95%E6%A2%B3%E7%90%86%E7%89%88%E6%9C%AC%E6%BA%90%E6%B5%81"><span class="toc-number">6.</span> <span class="toc-text">二、如何梳理版本源流</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%A5%96%E6%9C%AC%E7%9A%84%E7%A1%AE%E5%AE%9A%E5%92%8C%E5%8E%9F%E8%B2%8C%E7%9A%84%E8%80%83%E5%AF%9F"><span class="toc-number">6.1.</span> <span class="toc-text">1.祖本的确定和原貌的考察</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%89%88%E6%9C%AC%E7%9A%84%E9%92%9E%E5%86%99%E3%80%81%E5%88%BB%E5%8D%B0%E4%B8%8E%E6%B5%81%E4%BC%A0"><span class="toc-number">6.2.</span> <span class="toc-text">2.版本的钞写、刻印与流传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%89%88%E6%9C%AC%E9%97%B4%E7%9A%84%E6%AF%94%E5%8B%98"><span class="toc-number">6.3.</span> <span class="toc-text">3.版本间的比勘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%A1%AE%E5%AE%9A%E7%89%88%E6%9C%AC%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E3%80%81%E7%94%BB%E5%87%BA%E7%89%88%E6%9C%AC%E6%BA%90%E6%B5%81%E5%9B%BE"><span class="toc-number">6.4.</span> <span class="toc-text">4.确定版本之间的关系、画出版本源流图</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%86%99%E6%9C%AC%E7%9A%84%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%BD%BD%E4%BD%93"><span class="toc-number">7.</span> <span class="toc-text">三、写本的工具与载体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%86%99%E6%9C%AC%E7%9A%84%E5%B7%A5%E5%85%B7%EF%BC%9A%E7%AC%94%E3%80%81%E5%A2%A8%E3%80%81%E5%88%80"><span class="toc-number">7.1.</span> <span class="toc-text">1.写本的工具：笔、墨、刀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%AE%80%E7%89%8D%E7%9A%84%E5%8F%91%E7%8E%B0%E4%B8%8E%E5%BD%A2%E5%88%B6"><span class="toc-number">7.2.</span> <span class="toc-text">2.简牍的发现与形制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%B8%9B%E4%B9%A6%E7%9A%84%E5%8F%91%E7%8E%B0%E4%B8%8E%E5%BD%A2%E5%88%B6"><span class="toc-number">7.3.</span> <span class="toc-text">3.帛书的发现与形制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BA%B8%E4%B9%A6%E4%B8%8E%E5%86%8C%E5%8F%B6%E5%88%B6%E5%BA%A6%EF%BC%9A%E7%BA%B8%E7%9A%84%E5%8F%91%E6%98%8E%E4%B8%8E%E7%BA%B8%E4%B9%A6%E8%A3%85%E5%B8%A7%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-number">7.4.</span> <span class="toc-text">4.纸书与册叶制度：纸的发明与纸书装帧（重要）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A-%E7%BA%B8%E7%9A%84%E5%8F%91%E6%98%8E%E4%B8%8E%E5%8F%A4%E7%BA%B8%E7%9A%84%E5%8F%91%E7%8E%B0"><span class="toc-number">7.4.1.</span> <span class="toc-text">A.纸的发明与古纸的发现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-%E5%8F%A4%E7%BA%B8%E7%9A%84%E5%8F%91%E7%8E%B0"><span class="toc-number">7.4.2.</span> <span class="toc-text">B.古纸的发现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C-%E7%BA%B8%E7%9A%84%E6%8A%84%E9%80%A0%E4%B8%8E%E5%93%81%E7%B1%BB"><span class="toc-number">7.4.3.</span> <span class="toc-text">C.纸的抄造与品类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#D-%E7%BA%B8%E4%B9%A6%E7%9A%84%E8%A3%85%E5%B8%A7%EF%BC%9A%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E5%8F%98%E5%8C%96%E6%98%AF%E4%BB%8E%E5%8D%B7%E5%88%B0%E5%86%8C"><span class="toc-number">7.4.4.</span> <span class="toc-text">D.纸书的装帧：最重要的变化是从卷到册</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%86%99%E5%8D%B0%E4%B9%8B%E9%97%B4%EF%BC%9A%E7%9F%B3%E5%88%BB%E4%B8%8E%E6%8B%93%E6%9C%AC"><span class="toc-number">8.</span> <span class="toc-text">四、写印之间：石刻与拓本</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%91%A9%E5%B4%96"><span class="toc-number">8.1.</span> <span class="toc-text">（1）摩崖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%A2%91%E7%A2%A3"><span class="toc-number">8.2.</span> <span class="toc-text">（2）碑碣</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%A2%93%E8%AE%B0%E5%A2%93%E5%BF%97"><span class="toc-number">8.3.</span> <span class="toc-text">（3）墓记墓志</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
