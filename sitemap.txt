@@ -21,14 +21,14 @@ http://example.com/2024/07/17/%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%
 http://example.com/2023/12/12/Python%E5%AD%A6%E4%B9%A0/
 http://example.com/2024/07/27/Mygo%E4%BA%8E%E6%88%91%E4%B9%8B%E5%BD%B1%E5%93%8D/
 http://example.com/2024/05/10/%E6%96%87%E5%AD%A6%E7%90%86%E8%AE%BA%E7%AC%94%E8%AE%B0/
-http://example.com/2024/05/12/%E8%AF%AD%E6%B3%95%E5%AD%A6%E7%AC%94%E8%AE%B0/
+http://example.com/2024/05/11/%E8%AF%AD%E6%B3%95%E5%AD%A6%E7%AC%94%E8%AE%B0/
 http://example.com/2024/06/11/20%E4%B8%96%E7%BA%AA%E6%AC%A7%E7%BE%8E%E7%8E%B0%E5%AE%9E%E4%B8%BB%E4%B9%89%E6%96%87%E5%AD%A6/
 http://example.com/2024/05/30/%E6%84%8F%E8%AF%86%E6%B5%81%E4%B8%8E%E6%84%8F%E8%B1%A1%E6%B4%BE/
 http://example.com/2024/06/10/Deadline-Yamero/
 http://example.com/2024/03/08/%E4%BB%8E%E3%80%8A%E8%B7%AF%E5%BE%97%E8%AE%B0%E3%80%8B%E7%9C%8B%E3%80%8A%E6%97%A7%E7%BA%A6%E3%80%8B%E5%8F%99%E4%BA%8B%E8%89%BA%E6%9C%AF/
 http://example.com/2024/05/05/%E8%B6%8A%E9%87%8E%E6%BB%91%E9%9B%AA%EF%BC%88%EF%BC%89/
 http://example.com/2024/05/21/5-21%E4%B8%96%E7%95%8C%E6%96%87%E5%AD%A6%E5%8F%B2-%E6%9C%AA%E6%9D%A5%E4%B8%BB%E4%B9%89%E4%B8%8E%E8%BE%BE%E8%BE%BE%E4%B8%BB%E4%B9%89/
-http://example.com/2099/05/09/%E8%87%AA%E9%A2%98/
+http://example.com/2099/05/08/%E8%87%AA%E9%A2%98/
 http://example.com/2024/03/14/%E5%8F%A4%E8%AF%97%E8%AF%8D%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90/
 http://example.com/2024/01/19/Reading-Materiels/
 http://example.com/2024/02/03/Mygo%E8%AE%BA%E8%8B%B1%E9%9B%84/
